@@ -1,0 +1,52 @@
+*{
+    font-family: sans-serif;
+}
+
+.contain{
+    display: flex;
+}
+
+.container{
+    padding-right: 5%;
+    margin-top: 100px;
+}
+
+.row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input[type=text]{
+        width: 40%;
+        padding: 3px;
+        height: 34px;
+        margin: 1.5%;
+        background-color: transparent;
+        border: 1px solid #cbd1da;
+        outline: none;
+    }
+    
+    ::placeholder{
+        padding: 3px
+    }
+
+    .flex{
+        height: 15vh !important;
+        width: 60% !important;
+    }
+
+    /* Responsive */
+
+    @media only screen and (max-width: 320px){
+        .contain{
+            padding-right:20%;
+        }
+        input[type=text]{
+            height:5vh;
+            width:20vh;
+            margin: 3%;
+            }
+            .flex{
+                width: 30vh !important;
+            }
+    }
